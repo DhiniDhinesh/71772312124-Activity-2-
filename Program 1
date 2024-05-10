@@ -1,0 +1,25 @@
+s=input('enter any string:')
+
+a={}
+
+for ch in s:
+
+    if ch in a:
+
+        a[ch]+=1
+
+    else:
+
+        a[ch]=1
+
+    print('count of all character is:',a)
+
+    for k,v in a.items():
+
+        print(k,'.',end='')
+
+        for i in range(0,v):
+
+            print('*',end='')
+
+        print()
